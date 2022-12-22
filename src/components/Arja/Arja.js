@@ -3,11 +3,13 @@ import { RingContext } from '../../App';
 
 const Arja = () => {        // useContext......
 
-    const ornaments = useContext(RingContext);
+    const [ornaments, house] = useContext(RingContext);
     return (
         <div style={{ backgroundColor: 'lightgrey' }}>
             <h1>Arja</h1>
             <p>{ornaments}</p>
+            <br />
+            <p>House: {house}</p>
         </div>
     );
 };
